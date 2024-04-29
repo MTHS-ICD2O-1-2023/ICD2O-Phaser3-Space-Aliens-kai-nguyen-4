@@ -33,7 +33,6 @@ class TitleScene extends Phaser.Scene {
    */
   init(data) {
     this.cameras.main.setBackgroundColor("ffffff")
-    this.load.image("titleSceneBackground", "./assets/aliens_screen_image.jpg")
   }
 
   /**
@@ -42,6 +41,7 @@ class TitleScene extends Phaser.Scene {
    */
   preload() {
     console.log("Title Scene")
+    this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg")
   }
 
   /**
