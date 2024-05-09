@@ -55,7 +55,7 @@ class GameScene extends Phaser.Scene {
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
 
     // Create a group for the missles
-    this.missleGroup = this.physics.add.group()
+    this.missileGroup = this.physics.add.group()
   }
 
   /**
@@ -86,7 +86,7 @@ class GameScene extends Phaser.Scene {
         // Fire missle
         this.fireMissile = true
         const aNewMissle = this.physics.add.sprite(this.ship.x, this.ship.y, 'missile')
-        this.missleGroup.add(aNewMissle)
+        this.missileGroup.add(aNewMissle)
       }
     }
     if (keySpaceObj.isUp === true) {
