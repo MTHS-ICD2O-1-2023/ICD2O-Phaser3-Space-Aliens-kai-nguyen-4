@@ -89,7 +89,7 @@ class GameScene extends Phaser.Scene {
         this.missleGroup.add(aNewMissle)
       }
     }
-    if (keySpaceObj,isUp === true) {
+    if (keySpaceObj.isUp === true) {
       this.fireMissile = false
     }
   }
